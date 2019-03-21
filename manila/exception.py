@@ -870,6 +870,8 @@ class HNASItemNotFoundException(StorageResourceNotFound):
 class HNASNothingToCloneException(ManilaException):
     message = _("HNAS Nothing To Clone Exception: %(msg)s")
 
+class DCacheException(ManilaException):
+    message = _("dCache exception occurred: %(msg)s")
 
 # ShareGroup
 class ShareGroupNotFound(NotFound):
